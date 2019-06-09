@@ -62,7 +62,10 @@ password=1q2w3e4r5t
 
 ![metrics-view](https://github.com/zhongdj/git-stats/blob/master/images/metrics.png)
 
-
+Query Net changes Group by day:
+![net-lines-changed](https://github.com/zhongdj/git-stats/blob/master/images/net.screenshot.png)
+Generate Charts with Excel:
+![net-lines-chart](https://github.com/zhongdj/git-stats/blob/master/images/net.chart.png)
 
 # Known Issue
 
