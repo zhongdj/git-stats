@@ -18,4 +18,8 @@ services:
     - LANG=en_US.UTF-8
     tmpfs:
     - /tmp
-
+ 
+  metabase:
+    image:  metabase/metabase
+    ports:
+      - "3000:3000" 
