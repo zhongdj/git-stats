@@ -2,12 +2,13 @@ version: "3.0"
 services:
 
   backend:
-    image: zhongdj/git-stats-backend:v0.4
+    image: zhongdj/git-stats-backend:v0.5
     ports:
       - "9000:9000"
     volumes:
       - ~/.ssh:/root/.ssh
       - ~/.git-stats-tasks:/root/.tasks
+      - ~/tags:/root/tags
 
   db:
     image: mysql:5.7
