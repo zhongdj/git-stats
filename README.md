@@ -19,7 +19,7 @@ curl -H "Content-Type:application/json" \
   '{ 
      "repositories" : [
        { 
-         "repositoryUrl": "git@github.com:zhongdj/git-stats-backend.git" , "branch" : "master"
+         "repositoryUrl": "git@github.com:zhongdj/git-stats-backend.git" , "branch" : "master", "excludes" : []
        }
      ], 
      "fromDay": "2019-04-25" 
