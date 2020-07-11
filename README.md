@@ -10,6 +10,16 @@ Make sure you have docker-compose and docker installed.
 docker-compose up -d
 ```
 
+# Configure Metabase
+Open http://localhost:3000 1st time to sign up a user, and then configure username/password.
+
+Create a file: session.properties with user/pass configured in previous step.
+```bash
+username=zhongdj@gmail.com
+password=1q2w3e4r5t
+```
+and put this file under ~/metabase.
+
 # Kickoff a run
 ```bash
 
