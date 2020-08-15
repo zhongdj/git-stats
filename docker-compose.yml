@@ -27,12 +27,12 @@ services:
     tmpfs:
       - /tmp
     healthcheck:
-      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost", "-uroot", "-p1q2w3e4r5t"]
       timeout: 20s
       retries: 10
  
   metabase:
-    image:  metabase/metabase
+    image:  metabase/metabase:v0.35.4
     ports:
       - "3000:3000" 
     healthcheck:
