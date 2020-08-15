@@ -2,7 +2,7 @@ version: "2.1"
 services:
 
   backend:
-    image: zhongdj/git-stats-backend:v0.95
+    image: zhongdj/git-stats-backend:v0.96
     ports:
       - "9000:9000"
     volumes:
