@@ -6,6 +6,7 @@ services:
     ports:
       - "9000:9000"
     volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
       - ~/.ssh:/root/.ssh
       - ~/.git-stats-tasks:/root/.tasks
       - ~/tags:/root/tags
@@ -15,6 +16,12 @@ services:
         condition: service_healthy
       metabase:
         condition: service_healthy
+
+  golang-qa:
+    image: zhongdj/golang-qa:v0.1
+    volumes:
+      - ~/.git-stats-tasks:/root/.tasks
+    command: ["ping", "-i", "100", "golang-qa"]
           
 
   db:
@@ -37,5 +44,5 @@ services:
       - "3000:3000" 
     healthcheck:
       test: ["CMD", "wget", "http://localhost:3000"]
-      timeout: 20s
-      retries: 10
+      timeout: 5s
+      retries: 20
