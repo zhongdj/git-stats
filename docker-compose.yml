@@ -10,7 +10,6 @@ services:
       - ~/.ssh:/root/.ssh
       - ~/.git-stats-tasks:/root/.tasks
       - ~/tags:/root/tags
-      - ~/metabase:/opt/docker/conf/metabase
     depends_on:
       db:
         condition: service_healthy
