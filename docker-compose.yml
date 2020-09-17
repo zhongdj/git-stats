@@ -2,10 +2,12 @@ version: "2.1"
 services:
 
   backend:
-    image: zhongdj/git-stats-backend:v0.9992
+    image: zhongdj/git-stats-backend:v0.9993
     ports:
       - "9000:9000"
       - "5005:5005"
+    environment:
+      - JAVA_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ~/.ssh:/root/.ssh
