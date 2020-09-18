@@ -88,7 +88,7 @@ curl -H "Content-Type:application/json" \
   '{
      "repositories" : [
        {
-         "repositoryUrl": "git@gitlab.com:architectures-lab/tweets.git" , "branch" : "bob-spec-pojo-java", "profile" : "my.onion", "excludes" : ["vendor", "thrift_gen" ]
+         "repositoryUrl": "git@gitlab.com:architectures-lab/tweets.git" , "branch" : "bob-spec-pojo-java", "profile" : "my.onion", "local" : false, "excludes" : ["vendor", "thrift_gen" ]
        }
      ],
      "fromDay": "2020-01-01"
