@@ -2,7 +2,7 @@ version: "2.1"
 services:
 
   backend:
-    image: zhongdj/git-stats-backend:v0.9994
+    image: zhongdj/git-stats-backend:v0.9995
     ports:
       - "9000:9000"
       - "5005:5005"
@@ -16,8 +16,8 @@ services:
     depends_on:
       db:
         condition: service_healthy
-      metabase:
-        condition: service_healthy
+#      metabase:
+#        condition: service_healthy
 
   golang-qa:
     image: zhongdj/golang-qa:v0.1
